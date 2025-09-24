@@ -1,0 +1,6 @@
+mosu:
+  oss:
+    endpoint: xxx
+    accessKey: xxx
+    secretKey: xxx
+    path-style-access: false

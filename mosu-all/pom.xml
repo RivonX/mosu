@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--suppress ALL -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>io.github.rivon</groupId>
+        <artifactId>mosu</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>mosu-all</artifactId>
+    <name>${project.artifactId}</name>
+    <description>Mosu基于JDK17的Springboot常用项目框架，降低相关API的学习成本，提高工作效率。</description>
+    <url>https://github.com/RivonX/mosu</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.rivon</groupId>
+            <artifactId>mosu-oss</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.gitee.nsboot</groupId>-->
+<!--            <artifactId>nsboot-notify</artifactId>-->
+<!--            <version>${project.parent.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.gitee.nsboot</groupId>-->
+<!--            <artifactId>nsboot-cache</artifactId>-->
+<!--            <version>${project.parent.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.gitee.nsboot</groupId>-->
+<!--            <artifactId>nsboot-mq</artifactId>-->
+<!--            <version>${project.parent.version}</version>-->
+<!--        </dependency>-->
+    </dependencies>
+
+</project>
