@@ -1,0 +1,17 @@
+#缓存相关配置
+mosu:
+  cache:
+    localCache:
+      enable: true  # 是否启用本地缓存
+      maximumSize: 1000  # 缓存最大容量
+      expireAfterWrite: 10  # 写入缓存后 3600 秒过期
+      expireAfterAccess: 5  # 访问缓存后 1800 秒过期
+    redission:
+      #是否启用redission缓存
+      enable: true
+      host: 192.168.2.107
+      port: 6379
+      database: 0
+      password: 123456
+      time-out: 30000
+      ssl: false

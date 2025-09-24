@@ -5,8 +5,12 @@
     <file url="file://$PROJECT_DIR$/mosu-all/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-bom/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mosu-cache/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mosu-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-mq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-mq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mosu-notify/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mosu-notify/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-oss/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mosu-oss/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

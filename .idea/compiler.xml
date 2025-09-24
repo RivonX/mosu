@@ -7,17 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mosu-oss" />
+        <module name="mosu-notify" />
+        <module name="mosu-cache" />
         <module name="mosu-mq" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nsboot-notify" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="mosu" options="-Xlint:unchecked" />
       <module name="mosu-all" options="-Xlint:unchecked" />
       <module name="mosu-bom" options="-Xlint:unchecked" />
+      <module name="mosu-cache" options="-Xlint:unchecked" />
       <module name="mosu-mq" options="-Xlint:unchecked" />
+      <module name="mosu-notify" options="-Xlint:unchecked" />
       <module name="mosu-oss" options="-Xlint:unchecked" />
+      <module name="nsboot-notify" options="-parameters -Xlint:unchecked" />
     </option>
   </component>
 </project>
