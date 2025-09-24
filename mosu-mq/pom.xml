@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--suppress ALL -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>io.github.rivon</groupId>
+        <artifactId>mosu</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>mosu-mq</artifactId>
+    <name>${project.artifactId}</name>
+    <description>Mosu 消息队列（MQ）</description>
+
+    <properties>
+        <Automatic-Module-Name>io.github.rivon.mosu.mq</Automatic-Module-Name>
+        <!-- versions -->
+        <rocketmq.version>2.2.0</rocketmq.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <!-- Rabbitmq 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!-- Rocketmq 依赖 -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+            <version>${rocketmq.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

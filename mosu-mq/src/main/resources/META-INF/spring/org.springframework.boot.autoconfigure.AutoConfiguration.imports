@@ -1,0 +1,2 @@
+io.github.rivon.mosu.mq.config.RabbitMqConfiguration
+io.github.rivon.mosu.mq.config.RocketMqConfiguration

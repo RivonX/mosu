@@ -19,7 +19,7 @@
         <module>mosu-oss</module>
 <!--        <module>nsboot-notify</module>-->
 <!--        <module>nsboot-cache</module>-->
-<!--        <module>nsboot-mq</module>-->
+        <module>mosu-mq</module>
 <!--        <module>nsboot-logistics</module>-->
 <!--        <module>nsboot-usps</module>-->
     </modules>

@@ -1,0 +1,37 @@
+#缓存相关配置
+mosu:
+  mq:
+    rabbit:
+      enable: false
+      host: 192.168.2.105
+      port: 5672
+      username: admin
+      password: 123456
+      virtual-host: /
+      #确认消息已发送到队列(Queue)
+      publisher-returns: true
+      modules:
+        - exchange:
+            name: mytest
+            #type为RabbitExchangeTypeEnum枚举中的值。不配置默认为Direct
+            type: DIRECT
+          queue:
+            name: default.queue
+            arguments:
+              # 队列中所有消息的最大存活时间。单位毫秒。 1分钟
+              x-message-ttl: 60000
+          # routing-key可以为空
+          routing-key: default.queue.key
+    rocket:
+      #是否启用RocketMQ
+      enable: false
+      #RocketMQ的NameServer地址
+      name-server: 192.168.2.177:9876
+      #生产者配置
+      producer:
+        group: user-rocketmq-group # 生产者组名
+        groupName: user-rocketmq-group # 生产者组名
+        namesrvAddr: 192.168.2.177:9876 # 服务地址
+        maxMessageSize: 4096 # 消息最大长度 默认1024*4(4M)
+        sendMsgTimeout: 3000 # 发送消息超时时间,默认3000
+        retryTimesWhenSendFailed: 2 # 发送消息失败重试次数，默认2
